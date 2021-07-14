@@ -1,0 +1,26 @@
+@import url("reset.css");
+
+body {
+    box-sizing: border-box;
+}
+
+main {
+    height: 40rem;
+    width: 40rem;
+    background-color: red;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div {
+    height: 10rem;
+    width: 10rem;
+    background-color: yellow;
+
+    &:hover {
+        background-color: blue;
+    }
+}
