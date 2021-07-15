@@ -45,7 +45,7 @@ label {
 .sketch-area {
   height: 40rem;
   width: 40rem;
-  background-color: gray;
+  background-color: lightgray;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

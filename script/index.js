@@ -22,7 +22,7 @@ function clearSketchSpace() {
 
 function activateSketchTiles() {
     document.querySelectorAll(".tile").forEach(item => {
-        item.addEventListener("mousedown", event => {
+        item.addEventListener("mouseover", event => {
             item.classList.add("tile-change-color");
         })
     })
