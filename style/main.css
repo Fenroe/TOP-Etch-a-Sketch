@@ -2,11 +2,12 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: url("../assets/body-background.jpg");
+  background-color: skyblue;
 }
 
 .menu-container {
   width: 40rem;
-  background-color: red;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,10 +26,26 @@ label {
   font-weight: bold;
 }
 
+.sketch-area-container {
+  height: 50rem;
+  width: 50rem;
+  background-color: red;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .sketch-area {
   height: 40rem;
   width: 40rem;
-  background-color: red;
+  background-color: white;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,17 +61,16 @@ label {
 }
 
 .tile {
-  background-color: yellow;
+  background-color: white;
   height: 4rem;
   width: 4rem;
 }
 
 .tile:hover {
-  background-color: blue;
+  background-color: black;
 }
 
 .heading-container {
-  background-color: blue;
   width: 40rem;
   margin: 0 auto;
 }

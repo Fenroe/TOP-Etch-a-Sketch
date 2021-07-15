@@ -1,15 +1,20 @@
-const main = document.getElementById("sketch-area");
-const pageSpace = 100;
+const button = document.querySelector("button");
+const sketchArea = document.getElementById("sketch-area");
+const select = document.querySelector("select");
 
-function fillPage() {
-    document.addEventListener("DOMContentLoaded", function() {
-        for (let i=0; i < pageSpace; i++) {
-            let tile = document.createElement("div");
-            tile.className = "tile";
-
-            main.appendChild(tile);  
-        }      
-    })
+function declareSketchSpace() {
+    return select.value;
 }
 
-fillPage();
+function fillSketchSpace(sketchSpace) {
+    let tileSize = "facotr-"+sketchSpace;
+    for (let i=0; i < sketchSpace; i++) {
+        let tile = document.createElement("div");
+        tile.classList.add("tile", tileSize);
+        sketchArea.appendChild(tile);  
+    }
+}
+
+button.addEventListener("click", function() {
+    fillSketchSpace(declareSketchSpace());
+})
