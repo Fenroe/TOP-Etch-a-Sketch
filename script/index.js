@@ -20,7 +20,16 @@ function clearSketchSpace() {
     }
 }
 
+function activateSketchTiles() {
+    document.querySelectorAll(".tile").forEach(item => {
+        item.addEventListener("mousedown", event => {
+            item.classList.add("tile-change-color");
+        })
+    })
+}
+
 button.addEventListener("click", function() {
     clearSketchSpace();
     fillSketchSpace();
+    activateSketchTiles();
 })

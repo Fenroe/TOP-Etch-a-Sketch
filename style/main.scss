@@ -32,7 +32,7 @@ label {
 .sketch-area {
     height: 40rem;
     width: 40rem;
-    background-color: white;
+    background-color: gray;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -41,11 +41,7 @@ label {
 }
 
 .tile {
-    background-color: blue;
-
-    &:hover {
-        background-color: black;
-    }
+    background-color: white;
 }
 
 .heading-container {
@@ -102,4 +98,8 @@ label {
 .factor-10 {
     height: 4rem;
     width: 4rem;
+}
+
+.tile-change-color {
+    background-color: black;
 }
