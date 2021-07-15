@@ -2,19 +2,25 @@ const button = document.querySelector("button");
 const sketchArea = document.getElementById("sketch-area");
 const select = document.querySelector("select");
 
-function declareSketchSpace() {
-    return select.value;
-}
-
-function fillSketchSpace(sketchSpace) {
-    let tileSize = "facotr-"+sketchSpace;
-    for (let i=0; i < sketchSpace; i++) {
+function fillSketchSpace() {
+    let sketchSpace = select.value;
+    let tileSize = "factor-"+sketchSpace;
+    for (let i=0; i < sketchSpace*sketchSpace; i++) {
         let tile = document.createElement("div");
         tile.classList.add("tile", tileSize);
         sketchArea.appendChild(tile);  
     }
 }
 
+function clearSketchSpace() {
+    oldTiles = sketchArea.getElementsByClassName("tile");
+    let oldTilesAmount = oldTiles.length;
+    for(i=oldTilesAmount-1; i >= 0; i--) {
+        sketchArea.removeChild(oldTiles[i]);
+    }
+}
+
 button.addEventListener("click", function() {
-    fillSketchSpace(declareSketchSpace());
+    clearSketchSpace();
+    fillSketchSpace();
 })

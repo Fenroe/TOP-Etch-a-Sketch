@@ -41,9 +41,7 @@ label {
 }
 
 .tile {
-    background-color: white;
-    height: 4rem;
-    width: 4rem;
+    background-color: blue;
 
     &:hover {
         background-color: black;
@@ -67,8 +65,8 @@ label {
 }
 
 .factor-3 {
-    height: 13.3rem;
-    width: 13.3rem;
+    height: 13.3333333333rem;
+    width: 13.3333333333rem;
 }
 
 .factor-4 {
@@ -82,13 +80,13 @@ label {
 }
 
 .factor-6 {
-    height: 6.6rem;
-    width: 6.6rem;
+    height: 6.66666666667rem;
+    width: 6.66666666667rem;
 }
 
 .factor-7 {
-    height: 5.7rem;
-    width: 5.7rem;
+    height: 5.71428571429rem;
+    width: 5.71428571429rem;
 }
 
 .factor-8 {
@@ -97,8 +95,8 @@ label {
 }
 
 .factor-9 {
-    height: 4.4rem;
-    width: 4.4rem;
+    height: 4.44444444444rem;
+    width: 4.44444444444rem;
 }
 
 .factor-10 {
