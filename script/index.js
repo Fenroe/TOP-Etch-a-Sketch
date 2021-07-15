@@ -1,5 +1,5 @@
 const main = document.getElementById("sketch-area");
-const pageSpace = 16 //maximum amount of tiles that will fit into the main HTML element
+const pageSpace = 100;
 
 function fillPage() {
     document.addEventListener("DOMContentLoaded", function() {
