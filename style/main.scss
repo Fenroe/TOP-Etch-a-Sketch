@@ -34,10 +34,57 @@ label {
     width: 40rem;
     background-color: lightgray;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;    
+    display: grid;   
+}
+
+.space-10x10 {
+    grid-template-rows: repeat(10, 4rem);
+    grid-template-columns: repeat(10, 4rem);
+}
+
+.space-20x20 {
+    grid-template-rows: repeat(20, 2rem);
+    grid-template-columns: repeat(20, 2rem);
+}
+
+.space-30x30 {
+    grid-template-rows: repeat(30, 1.33rem);
+    grid-template-columns: repeat(30, 1.33rem);
+}
+
+.space-40x40 {
+    grid-template-rows: repeat(40, 1rem);
+    grid-template-columns: repeat(40, 1rem);
+}
+
+.space-50x50 {
+    grid-template-rows: repeat(50, .8rem);
+    grid-template-columns: repeat(50, .8rem);
+}
+
+.space-60x60 {
+    grid-template-rows: repeat(60, .66rem);
+    grid-template-columns: repeat(60, .66rem);
+}
+
+.space-70x70 {
+    grid-template-rows: repeat(70, .57rem);
+    grid-template-columns: repeat(70, .57rem);
+}
+
+.space-80x80 {
+    grid-template-rows: repeat(80, .5rem);
+    grid-template-columns: repeat(80, .5rem);
+}
+
+.space-90x90 {
+    grid-template-rows: repeat(90, .44rem);
+    grid-template-columns: repeat(90, .44rem);
+}
+
+.space-100x100 {
+    grid-template-rows: repeat(100, .4rem);
+    grid-template-columns: repeat(100, .4rem);
 }
 
 .tile {
@@ -98,6 +145,51 @@ label {
 .factor-10 {
     height: 4rem;
     width: 4rem;
+}
+
+.factor-20 {
+    height: 2rem;
+    width: 2rem;
+}
+
+.factor-30 {
+    height: 1.33rem;
+    width: 1.33rem;
+}
+
+.factor-40 {
+    height: 1rem;
+    width: 1rem;
+}
+
+.factor-50 {
+    height: .8rem;
+    width: .8rem;
+}
+
+.factor-60 {
+    height: .66rem;
+    width: .66rem;
+}
+
+.factor-70 {
+    height: .57rem;
+    width: .57rem;
+}
+
+.factor-80 {
+    height: .5rem;
+    width: .5rem;
+}
+
+.factor-90 {
+    height: .44rem;
+    width: .44rem;
+}
+
+.factor-100 {
+    height: .4rem;
+    width: .4rem;
 }
 
 .tile-change-color {

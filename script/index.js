@@ -4,7 +4,10 @@ const select = document.querySelector("select");
 
 function fillSketchSpace() {
     let sketchSpace = select.value;
-    let tileSize = "factor-"+sketchSpace;
+    sketchArea.classList.remove('space-10x10', 'space-20x20', 'space-30x30', 'space-40x40', 'space-50x50', 'space-60x60', 'space-70x70',
+    'space-80x80', 'space-90x90', 'space-100x100');
+    sketchArea.classList.add(`space-${sketchSpace}x${sketchSpace}`)
+    let tileSize = `factor-${sketchSpace}`;
     for (let i=0; i < sketchSpace*sketchSpace; i++) {
         let tile = document.createElement("div");
         tile.classList.add("tile", tileSize);
